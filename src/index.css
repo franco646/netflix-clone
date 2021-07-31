@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #141414;
+  font-family: "NetflixSansRegular";
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "NetflixSansRegular";
+  src: local("NetflixSansRegular"),
+    url("./fonts/NetflixSansRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NetflixSansBold";
+  src: local("NetflixSansBold"),
+    url("./fonts/NetflixSansBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NetflixSansLight";
+  src: local("NetflixSansLight"),
+    url("./fonts/NetflixSansLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NetflixSansMedium";
+  src: local("NetflixSansMedium"),
+    url("./fonts/NetflixSansMedium.ttf") format("truetype");
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

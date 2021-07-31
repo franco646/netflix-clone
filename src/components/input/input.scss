@@ -1,0 +1,14 @@
+.input {
+  box-sizing: border-box;
+  border: solid 1px #8c8c8c;
+  border-radius: 2px;
+  appearance: none;
+  border: 0;
+  color: #000;
+  line-height: normal;
+
+  &.color-black {
+    background: #333;
+    color: #fff;
+  }
+}

@@ -1,0 +1,42 @@
+.background {
+  z-index: 0;
+  position: absolute;
+  top: -90px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  height: 100vh;
+
+  &.login__background {
+    top: 0%;
+    z-index: -1;
+
+    .background__image {
+      height: 150%;
+      width: 150%;
+      object-fit: cover;
+    }
+  }
+}
+
+.background__img__gradient {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.background__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

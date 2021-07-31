@@ -1,0 +1,60 @@
+.profile__selector__container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.profile__selector__title {
+  font-size: 3.5vw;
+  font-family: "NetflixSansRegular";
+  font-weight: 400;
+
+  @media (max-width: 800px) {
+    font-size: 30px;
+  }
+}
+
+.profile__selector__list {
+  display: inline-flex;
+}
+
+.profile__box {
+  margin: 0 2vw 0 0;
+
+  &:hover {
+    .profile__img {
+      border-color: #e5e5e5;
+    }
+
+    .profile__name {
+      color: white;
+    }
+  }
+}
+
+.profile__img {
+  border-radius: 4px;
+  height: 10vw;
+  width: 10vw;
+  max-height: 200px;
+  max-width: 200px;
+  min-height: 84px;
+  min-width: 84px;
+  border: 4px solid transparent;
+  box-sizing: border-box;
+}
+
+.profile__name {
+  font-family: "NetflixSansRegular";
+  font-size: 1.3vw;
+  color: grey;
+
+  @media (max-width: 800px) {
+    font-size: 12px;
+  }
+}

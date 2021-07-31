@@ -1,0 +1,213 @@
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.5s;
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 70px;
+  z-index: 10;
+
+  &.login__navbar {
+    @media (max-width: 440px) {
+      padding-top: 0px;
+      height: 45px;
+    }
+
+    .navbar__logo__container {
+      width: 169px;
+      height: 47px;
+
+      @media (max-width: 440px) {
+        padding-top: 12px;
+        width: 77px;
+        height: 22px;
+      }
+    }
+  }
+
+  &.browse__navbar {
+    height: 48px;
+
+    .navbar__container {
+      padding-top: 0;
+
+      @media (max-width: 840px) {
+        padding-top: 0.5rem;
+      }
+    }
+
+    .navbar__logo__container {
+      width: 94px;
+      height: 27px;
+      margin-right: 25px;
+    }
+
+    @media (max-width: 840px) {
+      height: 41px;
+      padding-top: 3px;
+
+      .navbar__logo__container {
+        width: 81px;
+        height: 21px;
+      }
+    }
+  }
+}
+
+.navbar__logo {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.navbar__logo__container {
+  width: 136px;
+  height: 38px;
+  position: relative;
+  padding-top: 8px;
+
+  @media (max-width: 950px) {
+    width: 110px;
+    height: 34px;
+  }
+
+  @media (max-width: 550px) {
+    width: 90px;
+    height: 26px;
+    min-width: 50px;
+  }
+}
+
+.navbar__container {
+  position: relative;
+  margin: 0 3.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 0.5rem;
+  height: auto;
+
+  @media (max-width: 950px) {
+    margin: 0 45px;
+  }
+
+  @media (max-width: 550px) {
+    margin: 0 5%;
+  }
+}
+
+.navbar__items {
+  display: flex;
+  width: 100%;
+  color: white;
+}
+
+.navbar__links__container {
+  position: relative;
+  line-height: 37px;
+  margin-right: auto;
+  display: flex;
+
+  a {
+    font-size: 14px;
+    margin-left: 18px;
+    line-height: 30px;
+    font-family: "NetflixSansRegular";
+    font-weight: 400;
+    text-decoration: none;
+    color: #e5e5e5;
+
+    &.selected {
+      color: white;
+    }
+
+    &:hover {
+      color: #b3b3b3;
+    }
+  }
+
+  @media (max-width: 885px) {
+    .navbar__links__items {
+      left: 50%;
+      top: 30px;
+      transform: translateX(-50%);
+      border: 1px solid #4b4b4b;
+      display: none;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.75);
+      min-width: 260px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+
+      a {
+        color: #b3b3b3;
+        float: none;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        margin-left: 0px;
+
+        &.selected {
+          color: white;
+        }
+
+        &:hover {
+          background-color: rgba(31, 31, 31, 0.75);
+        }
+      }
+    }
+
+    .navbar__links__dropdown {
+      display: inline-flex;
+    }
+
+    &:hover {
+      .navbar__links__items {
+        display: block;
+      }
+    }
+  }
+}
+
+.navbar__options_container {
+  margin-left: auto;
+  display: flex;
+}
+
+.navbar__login__button {
+  border-radius: 3px;
+  height: 34px;
+
+  @media (max-width: 550px) {
+    height: 27px;
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+.navbar__links__dropdown {
+  display: none;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #e5e5e5;
+
+  svg {
+    height: 30px;
+    margin-left: 5px;
+  }
+}
+
+.navbar__searchbar__container {
+  position: relative;
+}

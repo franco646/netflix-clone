@@ -1,0 +1,91 @@
+.account__dropdown {
+  display: inline-block;
+  position: relative;
+  width: 52px;
+
+  &:hover {
+    .account__dropdown__caret {
+      transform: rotate(180deg);
+    }
+
+    .account__dropdown__content {
+      display: block;
+    }
+  }
+}
+
+.account__dropdown__image {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.account__dropdown__caret {
+  height: 37px;
+  transition-duration: 150ms;
+  position: absolute;
+  right: 0%;
+
+  @media (max-width: 550px) {
+    display: none;
+  }
+}
+
+.account__dropdown__content {
+  padding-block: 10px;
+  top: 37px;
+  display: none;
+  border: 1px solid #4b4b4b;
+  right: 20px;
+  position: absolute;
+  background-color: black;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 14px;
+
+  img {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+  }
+
+  hr {
+    border: 1px solid #4b4b4b;
+  }
+}
+
+.account__dropdown__profile {
+  display: flex;
+  padding: 5px;
+  color: #e5e5e5;
+
+  &:hover {
+    cursor: pointer;
+
+    .account__dropdown__name {
+      text-decoration-line: underline;
+    }
+  }
+}
+
+.account__dropdown__name {
+  height: 32px;
+  text-align: center;
+  line-height: 32px;
+  margin-left: 10px;
+}
+
+.account__dropdown__logout {
+  font-family: "NetflixSansBold";
+  margin-left: 5px;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
+  }
+}
